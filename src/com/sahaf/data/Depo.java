@@ -150,6 +150,8 @@ public class Depo {
 
     public static List<Kitap> kitaplar() {
         return kitapListesi;
+        //gunluk calisma
+
     }
 
 }
