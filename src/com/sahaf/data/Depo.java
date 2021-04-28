@@ -97,7 +97,7 @@ public class Depo {
 
             kitapAdi = kitapAdlari[kitapIndex];
             kitapFiyat = kitapFiyatlari[kitapIndex];
-            isBestseller = bestSellers[kitapIndex];
+            isBestseller = bestSellers[kitapIndex++];
 
             kitapListesi.add(new Kitap(kitapAdi, kitapFiyat, isBestseller, yazar, yayinevi));
         }
