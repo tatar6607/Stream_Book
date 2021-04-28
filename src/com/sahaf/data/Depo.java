@@ -100,7 +100,9 @@ public class Depo {
             isBestseller = bestSellers[kitapIndex];
 
             kitapListesi.add(new Kitap(kitapAdi, kitapFiyat, isBestseller, yazar, yayinevi));
+            kitapIndex++;
         }
+
 
     }
 
