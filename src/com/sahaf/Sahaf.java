@@ -21,7 +21,6 @@ public class Sahaf {
         kitapListesi.stream().filter(t -> t.getBestSeller() == true).forEach(System.out::println);
 
 //        Bestseller olan kitap sayisi kac tane
-
 //        yayın evi istanbul adresli olanlar
 //        yayın evi izmir adresli olanlar
 //        kitap sayısı 5 ve üzeri olan yazar sayıları
