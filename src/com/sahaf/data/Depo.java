@@ -1,10 +1,8 @@
 package com.sahaf.data;
 
-
 import com.sahaf.models.Kitap;
 import com.sahaf.models.Yayinevi;
 import com.sahaf.models.Yazar;
-
 import java.util.*;
 import java.util.List;
 
@@ -83,7 +81,8 @@ public class Depo {
                 9.0,8.0,5.6,55.7,30.0,11.45,150.32,300.33,45.88,58.02,36.45,25.0,45.0,12.0,17.50
         };
 
-        Boolean [] bestSellers = {true, true, false, true, false, false, false, true, true, false,true, false, true,false,false,true,true,false,false,false,false,
+        Boolean [] bestSellers = {true, true, false, true, false, false, false, true, true,
+                false,true, false, true,false,false,true,true,false,false,false,false,
                 true, true, true,false, true,true,false,true,false
         };
 
@@ -94,7 +93,6 @@ public class Depo {
             yayinevi = yayineviListesi.get(indexYY++);
 
             indexYY = indexYY==10 ? 0 : indexYY;
-
             kitapAdi = kitapAdlari[kitapIndex];
             kitapFiyat = kitapFiyatlari[kitapIndex];
             isBestseller = bestSellers[kitapIndex];

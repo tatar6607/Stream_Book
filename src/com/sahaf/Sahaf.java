@@ -6,6 +6,7 @@ import com.sahaf.models.Kitap;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Sahaf {
 
@@ -18,9 +19,12 @@ public class Sahaf {
     public static void main(String[] args) {
 
 //        Bestseller olan kitaplari listele
-        kitapListesi.stream().filter(t -> t.getBestSeller() == true).forEach(System.out::println);
-
+ //       kitapListesi.stream().filter(t -> t.getBestSeller() == true).forEach(System.out::println);
+        System.out.println(kitapListesi.size());
 //        Bestseller olan kitap sayisi kac tane
+        System.out.println("Bestseller olan kitap sayisi kac tane: " +
+                kitapListesi.stream().filter(Kitap::getBestSeller)
+                        .count());
 //        yayın evi istanbul adresli olanlar
 //        yayın evi izmir adresli olanlar
 //        kitap sayısı 5 ve üzeri olan yazar sayıları
